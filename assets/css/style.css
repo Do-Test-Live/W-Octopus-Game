@@ -1,0 +1,12 @@
+body{
+    background: black;
+}
+
+.op-body{
+    max-width: 500px;
+    margin: auto;
+    min-height: 100vh;
+    background: url("../images/bg.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
