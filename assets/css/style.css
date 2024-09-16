@@ -1,3 +1,13 @@
+@font-face {
+    src: url("../fonts/Gameria.woff");
+    font-family: 'Gameria';
+}
+
+@font-face {
+    src: url("../fonts/Mabar.woff");
+    font-family: 'Mabar';
+}
+
 body{
     background: black;
 }
@@ -60,4 +70,120 @@ body{
 .op-coin-btn{
     background: transparent;
     border: unset;
+}
+
+.op-score{
+    font-family: 'Gameria', sans-serif;
+    color: white;
+}
+
+.op-level{
+    background: url("../images/top-bar.png") no-repeat center center;
+    background-size: contain;
+    height: inherit;
+}
+
+.op-image-container-1 {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 0.7rem;
+    justify-content: flex-end;
+}
+
+.op-image-container-2 {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 0.7rem;
+}
+
+.op-level-icon {
+    height: 3.5rem; /* Adjust as needed */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.op-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.op-text1{
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'Gameria', sans-serif;
+}
+
+.op-text2{
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'Mabar', sans-serif;
+    font-size: 12px;
+    color: #82fbff;
+}
+
+.op-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.op-footer-btn{
+    width: 100%;
+    background: url("../images/bottom-button.png") no-repeat center center;
+    background-size: contain;
+    height: 60px;
+    color: white;
+    border: unset;
+    font-family: 'Gameria', sans-serif;
+}
+
+.op-footer-row{
+    padding: unset;
+    --bs-gutter-x: 0rem;
+    margin: unset;
+}
+
+.op-footer-row .col-3{
+    padding: 2px;
+}
+
+.op-icon-heart{
+    height: 50px;
+}
+
+.op-progress-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.op-icon-heart {
+    width: 65px;
+    height: auto;
+    margin-right: -10px;
+    z-index: 1;
+}
+
+.op-progress-bar-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.op-progress-bar {
+    width: 100%;
+    background: url("../images/progress-bar.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 38px;
+}
+
+.op-progress-fill {
+    width: 60%;
+    height: 20px;
+    background: url(../images/progress.png) repeat center center;
+    background-size: 50px;
+    margin-top: 10px;
 }

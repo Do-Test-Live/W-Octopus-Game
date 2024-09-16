@@ -6,29 +6,77 @@
     <title>Octopus</title>
     <link href="assets/vendor/Bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/vendor/FontAwesome/css/all.min.css" rel="stylesheet"/>
-	<link href="assets/vendor/Bootstrap/font/bootstrap-icons.min.css" rel="stylesheet"/>
-	<link href="assets/vendor/uikit/css/uikit.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/Bootstrap/font/bootstrap-icons.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/uikit/css/uikit.min.css" rel="stylesheet"/>
     <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 <section class="container-fluid">
     <div class="op-body">
         <div class="op-video-background">
-            <video class="op-bg-video" autoplay muted loop>
+            <video autoplay class="op-bg-video" loop muted>
                 <source src="assets/images/background/bg-background.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="op-content">
                 <div class="op-container">
-                    <div class="op-fixed-div">Flex Div 1</div>
-                    <div class="op-fixed-div">Flex Div 2</div>
-                    <div class="op-flex-div">
-                        <button class="op-coin-btn h-100 w-100">
-
-                        </button>
+                    <div class="op-fixed-div d-flex justify-content-center align-items-center">
+                        <h1 class="op-score">9,586,321</h1>
                     </div>
-                    <div class="op-fixed-div">Flex Div 3</div>
-                    <div class="op-fixed-div">Flex Div 3</div>
+                    <div class="op-fixed-div">
+                        <div class="op-level">
+                            <div class="row">
+                                <div class="col-6 text-start">
+                                    <div class="op-image-container-1">
+                                        <img src="assets/images/icon-1.png" alt="Description of Image" class="op-level-icon">
+                                        <div class="op-text-container">
+                                            <p class="op-text1">OCTA</p>
+                                            <p class="op-text2"><img src="assets/images/icon-2.png" alt="Icon" class="op-icon"> LEVEL 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="op-image-container-2">
+                                        <img src="assets/images/icon-3.png" alt="Description of Image" class="op-level-icon">
+                                        <div class="op-text-container">
+                                            <p class="op-text1">OCTOPUS</p>
+                                            <p class="op-text2"><img src="assets/images/icon-4.png" alt="Icon" class="op-icon"> MYTHIC</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="op-flex-div">
+                        <button class="op-coin-btn h-100 w-100"></button>
+                    </div>
+                    <div class="op-fixed-div">
+                        <div class="op-progress-container">
+                            <img src="assets/images/Xp-icon-heart.png" class="img-fluid op-icon-heart" alt="Heart Icon"/>
+
+                            <div class="op-progress-bar-container">
+                                <div class="op-progress-bar">
+                                    <div class="op-progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="op-fixed-div">
+                        <div class="row op-footer-row">
+                            <div class="col-3">
+                                <button class="op-footer-btn">BOOST</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="op-footer-btn">EARN</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="op-footer-btn">INUAIT</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="op-footer-btn">WALLET</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
