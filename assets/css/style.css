@@ -46,7 +46,6 @@ body{
     z-index: 1;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 .op-container {
@@ -58,12 +57,19 @@ body{
 .op-fixed-div-1 {
     background-color: transparent;
     margin: 5px 0;
+    padding: 20px 0;
+}
+
+.op-fixed-div-2 {
+    background-color: transparent;
+    margin: 5px 0;
 }
 
 .op-fixed-div {
     height: 100px;
     background-color: transparent;
     margin: 5px 0;
+    padding: 0px 20px;
 }
 
 .op-flex-div {
