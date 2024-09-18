@@ -184,7 +184,7 @@ body{
 .op-progress-container {
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 .op-icon-heart {
