@@ -36,3 +36,16 @@ document.querySelector('.op-coin-btn').addEventListener('pointerdown', function(
     // Handle each pointer click (multi-finger or single-finger)
     handleCoinClick(event);
 });
+
+// Simulate loading progress
+let progress = 0;
+const progressBar = document.querySelector('.progress-bar');
+const interval = setInterval(() => {
+    progress += 1;
+    progressBar.style.width = progress + '%';
+    if (progress >= 100) {
+        clearInterval(interval);
+        // Hide preloader once loading is complete
+        document.querySelector('.preloader').style.display = 'none';
+    }
+}, 30); // Adjust this interval to simulate loading time
