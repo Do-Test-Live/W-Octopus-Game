@@ -22,7 +22,7 @@ document.querySelector('.op-coin-btn').addEventListener('click', function(event)
     // Remove the GIF after it has finished playing (assuming 2 seconds for GIF duration)
     setTimeout(function() {
         gif.remove();
-    }, 2000); // Adjust this to the length of your GIF
+    }, 1000); // Adjust this to the length of your GIF
 
     // Increment the score by a certain value (e.g., 100 points per click)
     score += 10;
