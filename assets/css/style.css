@@ -72,10 +72,21 @@ body{
     margin: 5px 0;
 }
 
-.op-coin-btn{
-    background: transparent;
+.op-coin-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer;
     border: unset;
 }
+
+.gif-container {
+    position: absolute;
+    width: 100px; /* Adjust GIF size */
+    height: 100px;
+    pointer-events: none; /* Prevent further interaction with the GIF */
+}
+
 
 .op-score{
     font-family: 'Gameria', sans-serif;
