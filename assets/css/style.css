@@ -174,7 +174,7 @@ body{
 .op-progress-bar {
     width: 100%;
     background: url("../images/progress-bar.png") no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     border-radius: 10px;
     overflow: hidden;
     height: 38px;
@@ -182,8 +182,8 @@ body{
 
 .op-progress-fill {
     width: 60%;
-    height: 20px;
-    background: url(../images/progress.png) repeat center center;
-    background-size: 50px;
-    margin-top: 10px;
+    height: 12px;
+    background: url(../images/progress.png) no-repeat center center;
+    background-size: cover;
+    margin: 13px 0 13px 0;
 }
