@@ -55,21 +55,30 @@ body{
 }
 
 .op-fixed-div-1 {
+    position: inherit;
     background-color: transparent;
     margin: 5px 0;
     padding: 20px 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .op-fixed-div-2 {
+    position: inherit;
     background-color: transparent;
     margin: 5px 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .op-fixed-div {
+    position: inherit;
     height: 100px;
     background-color: transparent;
     margin: 5px 0;
-    padding: 0px 20px;
+    padding: 0 20px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .op-flex-div {
@@ -92,9 +101,10 @@ body{
     position: absolute;
     width: 100px; /* Adjust GIF size */
     height: 100px;
-    pointer-events: none; /* Prevent further interaction with the GIF */
-    z-index: 2; /* Ensure it appears above other content inside the button */
+    pointer-events: none; /* Prevent interaction with the GIF */
+    z-index: 9999; /* Ensure it appears above all other content */
 }
+
 
 
 .op-score{

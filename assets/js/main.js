@@ -3,22 +3,21 @@ let score = 9586321; // Start from the existing score in the HTML
 
 // Function to handle a single click event and display the GIF
 function handleCoinClick(event) {
-    // Get the position of the click relative to the button
-    const buttonRect = event.target.getBoundingClientRect();
-    const clickX = event.clientX - buttonRect.left;
-    const clickY = event.clientY - buttonRect.top;
+    // Get the position of the click relative to the page (instead of just the button)
+    const clickX = event.clientX;
+    const clickY = event.clientY;
 
     // Create a GIF element
     const gif = document.createElement('img');
     gif.src = 'assets/images/bubble-v3.gif'; // Specify the path to the GIF
     gif.classList.add('gif-container');
 
-    // Position the GIF at the click location
+    // Position the GIF at the click location relative to the entire page
     gif.style.left = clickX - 50 + 'px'; // Adjust position based on GIF size
     gif.style.top = clickY - 50 + 'px';
 
-    // Append the GIF to the button
-    event.target.appendChild(gif);
+    // Append the GIF to the body, so it can overlap other elements freely
+    document.body.appendChild(gif);
 
     // Remove the GIF after it has finished playing (assuming 500ms for GIF duration)
     setTimeout(function() {
@@ -37,5 +36,3 @@ document.querySelector('.op-coin-btn').addEventListener('pointerdown', function(
     // Handle each pointer click (multi-finger or single-finger)
     handleCoinClick(event);
 });
-
-
