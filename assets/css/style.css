@@ -55,8 +55,13 @@ body{
     height: 100vh; /* Full viewport height */
 }
 
+.op-fixed-div-1 {
+    background-color: transparent;
+    margin: 5px 0;
+}
+
 .op-fixed-div {
-    height: 100px; /* Define specific height for this div */
+    height: 100px;
     background-color: transparent;
     margin: 5px 0;
 }
@@ -84,7 +89,7 @@ body{
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    padding: 2rem 0; /* Adjust padding if needed */
+    padding: 0; /* Adjust padding if needed */
 }
 
 .op-image-container-1, .op-image-container-2 {
