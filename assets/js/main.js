@@ -1,7 +1,8 @@
 // Initialize the score
 let score = 9586321; // Start from the existing score in the HTML
 
-document.querySelector('.op-coin-btn').addEventListener('click', function(event) {
+// Function to handle a single click event and display the GIF
+function handleCoinClick(event) {
     // Get the position of the click relative to the button
     const buttonRect = event.target.getBoundingClientRect();
     const clickX = event.clientX - buttonRect.left;
@@ -19,15 +20,22 @@ document.querySelector('.op-coin-btn').addEventListener('click', function(event)
     // Append the GIF to the button
     event.target.appendChild(gif);
 
-    // Remove the GIF after it has finished playing (assuming 2 seconds for GIF duration)
+    // Remove the GIF after it has finished playing (assuming 500ms for GIF duration)
     setTimeout(function() {
         gif.remove();
     }, 500); // Adjust this to the length of your GIF
 
-    // Increment the score by a certain value (e.g., 100 points per click)
+    // Increment the score by a certain value (e.g., 10 points per click)
     score += 10;
 
     // Format the score with commas and update the displayed value
     document.querySelector('.op-score').textContent = score.toLocaleString();
+}
+
+// Attach a pointerdown event to the button to allow for multi-touch interactions
+document.querySelector('.op-coin-btn').addEventListener('pointerdown', function(event) {
+    // Handle each pointer click (multi-finger or single-finger)
+    handleCoinClick(event);
 });
+
 
