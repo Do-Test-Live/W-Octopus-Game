@@ -113,7 +113,7 @@ body{
 }
 
 .op-level {
-    background: url("../images/top-bar.png") no-repeat center center;
+    background: url("../images/home/top-bar.png") no-repeat center center;
     background-size: contain; /* Ensures the background covers the entire section */
     height: 100%; /* Make it inherit height dynamically based on content */
     display: flex;
@@ -172,7 +172,7 @@ body{
 
 .op-footer-btn{
     width: 100%;
-    background: url("../images/bottom-button.png") no-repeat center center;
+    background: url("../images/home/bottom-button.png") no-repeat center center;
     background-size: contain;
     height: 60px;
     color: white;
@@ -214,7 +214,7 @@ body{
 
 .op-progress-bar {
     width: 100%;
-    background: url("../images/progress-bar.png") no-repeat center center;
+    background: url("../images/home/progress-bar.png") no-repeat center center;
     background-size: contain;
     border-radius: 10px;
     overflow: hidden;
@@ -224,7 +224,7 @@ body{
 .op-progress-fill {
     width: 60%;
     height: 12px;
-    background: url(../images/progress.png) no-repeat center center;
+    background: url(../images/home/progress.png) no-repeat center center;
     background-size: cover;
     margin: 13px 0 13px 0;
 }
